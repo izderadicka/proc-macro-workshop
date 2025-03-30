@@ -55,5 +55,6 @@ pub struct Command {
 fn main() {
     let builder = Command::builder();
 
-    let _ = builder;
+    let b = builder;
+    assert!(b.executable.is_none());
 }
